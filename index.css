@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+body {
+  background: url(Nike-Basketball-iPhone-Wallpaper-80-images-.jpg);
+  background-size:  cover;
+  background-position: inherit;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;  
+  font-family: 'Fjalla', sans-serif;
+}
+header {
+  background-color: rgb(26, 7, 7);
+  display: flex;
+  height: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+header a img {
+  width: 150px;
+  cursor: pointer;
+  margin-right: 100px;
+}
+.nav-link {
+  list-style: none;
+}
+.nav-link li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav-link li a {
+  color: #fff;
+  padding-bottom: 4px;
+  transition: all 0.3s ease 0s;
+}
+.nav-link li a:hover {
+  color: #C02425;  /* fallback for old browsers */
+  color: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.hover-border {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+.hover-border::after{
+  content:'' ;
+  width: 0%;
+  height: 4px;
+  background: #C02425;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  bottom: 0%;
+  left: 35%;
+  border-radius: 10px;
+  transition: all 500ms ease;
+}
+.hover-border:hover::after {
+  left: 0%;
+  right: 0%;
+  width: 100%;
+}
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background: rgb(12, 183, 226);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background: rgba(0, 136, 169, 0.8);
+}
+button a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
